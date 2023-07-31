@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: python-sdk-apicurio-registry
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads/pantinor-tenant/apicurio-registry/python-sdk-apicurio-registry@sha256:2a27054d779c5a731655e21081db0a468a35e08e1f6724e016983767e10ff43c
         name: my-python
         ports:
         - containerPort: 8081
