@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-sdk-apicurio-registry
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pantinor-tenant/apicurio-registry/python-sdk-apicurio-registry@sha256:2a27054d779c5a731655e21081db0a468a35e08e1f6724e016983767e10ff43c
+        name: my-python
+        resources: {}
+status: {}
